@@ -144,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
                         mAddition = true;
                         opdisplay.setText(edt1.getText().toString());
                         edt1.setText(null);
-
                     }
                 }
                 catch(NumberFormatException e)
@@ -178,8 +177,6 @@ public class MainActivity extends AppCompatActivity {
                     mMultiplication = true;
                     opdisplay.setText(edt1.getText()+" * ");
                     edt1.setText(null);
-
-
                 }
                 catch(NumberFormatException e)
                 {
