@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout android:layout_width="match_parent"
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_alignParentTop="true"
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
-    android:background="#c7e2ec"
+    android:background="#9ace86"
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_weight="1"
         android:textAlignment="textEnd"
         android:layout_gravity="end"
         android:textSize="30dp"
+        android:background="#90e194"
         android:id="@+id/text_output_display"
         />
-    <EditText
-        android:textSize="30dp"
+    <TextView
+        android:textSize="20dp"
         android:textAlignment="textEnd"
         android:inputType="numberDecimal"
         android:layout_gravity="end"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_weight=".50"
         android:layout_below="@+id/text_output_display"
         android:id="@+id/text_input_display"
         />
 
-    <LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -40,7 +46,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
-
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -51,6 +57,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -61,6 +68,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -71,6 +79,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -83,8 +92,12 @@
             />
 
     </LinearLayout>
-    <LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:textSize="30dp"
             android:textColor="@color/colorPrimaryDark"
@@ -95,6 +108,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -105,6 +119,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -114,10 +129,14 @@
             android:id="@+id/nine"
             style="?android:attr/borderlessButtonStyle"
             />
+
     </LinearLayout>
 
-    <LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -128,6 +147,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -138,6 +158,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -150,8 +171,11 @@
 
     </LinearLayout>
 
-    <LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -163,6 +187,7 @@
             />
 
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -173,6 +198,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -183,9 +209,12 @@
             style="?android:attr/borderlessButtonStyle"
             />
     </LinearLayout>
-    <LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <Button
             android:layout_weight="1"
+            android:onClick="buttonClick"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:textSize="30dp"
@@ -195,6 +224,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -205,6 +235,7 @@
             style="?android:attr/borderlessButtonStyle"
             />
         <Button
+            android:onClick="buttonClick"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
@@ -217,11 +248,4 @@
 
     </LinearLayout>
 
-
-
-
-
-
-</TableLayout>
-
-
+</LinearLayout>
